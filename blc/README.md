@@ -32,7 +32,7 @@ bin/develop ../data/compressed/output.dat ../data/graph/original_graph.txt
 * Call `Develop` to develop a compressed graph.
 * Call `TransformToAdj` and `TransformToEdge` to transform a graph.
 
-#Performance
+#### Performance
 
 Backlinks compression scheme has two steps: ordering vertexes and encoding the graph.
 This implementation uses BFS ordering for ordering vertexes and δ-code as the integer encoding scheme in encoding the graph.
@@ -40,16 +40,21 @@ This implementation uses BFS ordering for ordering vertexes and δ-code as the i
 The followings are the results for real graphs in [Stanford Large Network Dataset Collection](http://snap.stanford.edu/data/).
 
     graph : soc-Slashdot0922
-    edges      : 948464
-    bit length : 9238812
-    bits/edge  : 9.74081
+    Edges      : 948464
+    Bit length : 9238812
+    Bits/edge  : 9.74081
+    Elapsed time to compress: 2.16511s
     
-    graph : wiki-Vote
-    edges      : 26120
-    bit length : 259175
-    bits/edge  : 9.92247
+    graph : soc-LiveJournal
+    Edges      : 68993773
+    Bit length : 937623773
+    Bits/edge  : 13.59
+    Elapsed time to compress: 122.133s
+    
+Note:
+Actual compression time will vary depending on system capabilities. The code might crash incase of insufficient ram.
 
-#References
+#### References
 
 * Flavio Chierichetti, Ravi Kumar, Silvio Lattanzi, Michael
 Mitzenmacher, Alessandro Panconesi, and Prabhakar Raghavan. On
