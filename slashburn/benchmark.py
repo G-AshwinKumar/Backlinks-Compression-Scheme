@@ -5,13 +5,9 @@ import sys
 import time
 import pickle
 import numpy as np
-
 from scipy.stats import spearmanr
 from numpy.linalg import norm
-
 from ppr import *
-from pprtf import *
-
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
