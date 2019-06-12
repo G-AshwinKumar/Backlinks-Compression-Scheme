@@ -248,39 +248,18 @@ void AbtCompression ::Compress(std::vector<std::pair<int, int>> edges, BitString
 
   std::vector<int> order;
   std::sort(edges.begin(), edges.end());
-  /*
-  for (const auto &p : edges)
-  {
-    std::cout << p.first << ", " << p.second << std::endl;
-  }
-  */
-  // To find the max element in both the columns to find highest node
   auto max_pair = *std::max_element(std::begin(edges), std::end(edges), [](const auto &p1, const auto &p2) {
     return std::max(p1.first, p1.second) < std::max(p2.first, p2.second);
   });
   int max = std::max(max_pair.first, max_pair.second) + 1;
-  //std::cout << "Max" << max;
-  //std::cout << std::endl;
   height = (int)ceil(log2(max)) + 1;
-  //std::cout << "Height" << height;
-  //std::cout << std::endl;
   n = std::pow(2, height) - 1;
-  //std::cout << "n" << n;
   start_index = (int)n / 2;
-  //std::cout << "Start_index" << start_index;
-  //std::cout << std::endl;
-
-  /*
-  for (auto i = edges.begin(); i != edges.end(); ++i)
-  {
-    std::cout << *i.first << " ";
-  }
-  */
 
   std::vector<std::vector<int>>
   input_array(max, std::vector<int>(max, 0));
   TransformToAdj(edges, true, &input_array);
-  //std::cout << "Succesfull";
+
   for (int i = 0; i < max; ++i)
   {
     std::vector<int> temp_array(n, -1);
