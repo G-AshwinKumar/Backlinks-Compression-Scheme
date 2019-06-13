@@ -1,17 +1,20 @@
 # Social-Network-Compression
 
-This project aims to provide implementations for the state of the art social network compression algorithms (i.e graph compression) based on current research.
+A social network is a network of individuals (such as friends, acquaintances, and coworkers) connected by interpersonal relationships. The number of active users in social media networks is in an exponential rise, creating the need for complex mechanisms to analyze and understand user behavior. One important tool to aid this being the ability to compress these social media networks into graphs that can fit in main memory. This project aims to provide implementations for the state of the art social network compression algorithms (i.e graph compression) based on current research.
 
-There are working implementations of three methods,
-1. Backlinks compression scheme
-2. Slashburn techqnique
-3. Abstract Binary Tree compression.
+There are working implementations based on three methods,
+1. Backlinks compression scheme (C++)
+2. Slashburn techqnique (Python)
+3. Abstract Binary Tree compression (C++)
+
+###### Note:
++ These implementations are far from perfect but should provide a good base to work upon. Feel free to PR any code improvements (Readability or performance),or any solved issues and feel free to reach out. 
 
 + The respective folder of each method contains more information on how to run them.
 + ```/data/graph``` contains some sample graphs. Note: Edge list format may vary for the different methods, more details are provided in the individual implementations.
 
 #### Datasets:
-Social network graphs can be obtained from [Stanford Large Network Dataset Collection](https://snap.stanford.edu/data/)
+Large Social network graphs can be obtained from [Stanford Large Network Dataset Collection](https://snap.stanford.edu/data/)
 
 #### References:
 1. Flavio Chierichetti, Ravi Kumar, Silvio Lattanzi, Michael Mitzenmacher,Alessandro Panconesi, and Prabhakar Raghavan. On Compressing Social Networks. In Proceedings of the 15th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD ’09, pages 219–228, New York, NY, USA, 2009. ACM.
