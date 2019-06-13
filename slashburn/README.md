@@ -41,7 +41,9 @@ bear.preprocess('data/small.csv')
 + Sample execution for the slashburn algorithm is in ash.py file. Take a look at that file for deailed usage explanation.
 ---
 #### Note:
+
 Actual compression time will vary depending on system capabilities. The code might crash incase of insufficient ram.
+
 ---
 ### References:
 + Yongsub Lim, U. Kang, and C. Faloutsos. SlashBurn: Graph Compression and Mining beyond Caveman Communities. Knowledge and Data Engineering, IEEE Transactions on, 26(12):3077–3089, Dec 2014.
