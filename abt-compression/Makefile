@@ -12,7 +12,7 @@ test: bin/test
 bin:
 	mkdir -p bin
 
-bin/compress: samples/compress_main.cc ${SOURCES}
+bin/compress: src/compress_main.cc ${SOURCES}
 	$(CXX) $(CXXFLAGS) -Isrc -o $@ $^
 
 bin/test: src/abt_compression_test.cc ${SOURCES} 
