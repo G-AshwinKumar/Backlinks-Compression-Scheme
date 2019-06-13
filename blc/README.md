@@ -13,6 +13,19 @@ BLC expands on this by incorporating another idea namely,
 
 #### Usage:
 
+Assume graph is stored in some txt file with row-first order (**must** be), and tab seperated :
+
+```
+0   1
+1   0
+1   2
+2   1
+2   3
+...
+```
+
+(Example data can be found in `data/compressed/Slashdot0902.txt`.)
+
 #### From CUI Interface
 
     $ make
