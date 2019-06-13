@@ -7,11 +7,12 @@ There are working implementations based on three methods,
 2. Slashburn techqnique (Python)
 3. Abstract Binary Tree compression (C++)
 
-###### Note:
+#### Note:
 + These implementations are far from perfect but should provide a good base to work upon. Feel free to PR any code improvements (Readability or performance),or any solved issues and feel free to reach out. 
 
 + The respective folder of each method contains more information on how to run them.
-+ ```/data/graph``` contains some sample graphs. Note: Edge list format may vary for the different methods, more details are provided in the individual implementations.
++ ```/data/graph``` contains some sample graphs. 
++ Edge list format may vary for each implementation, more details are provided in the individual implementations.
 
 #### Datasets:
 Large Social network graphs can be obtained from [Stanford Large Network Dataset Collection](https://snap.stanford.edu/data/)
