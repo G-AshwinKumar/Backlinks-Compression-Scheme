@@ -1,26 +1,37 @@
 Backlinks compression
 ========================
 
-Backlinks compression is a graph compression scheme for real-world graphs.
+Backlinks compression is a graph compression scheme for real-world graphs. Backlinks compression (BLC) draws inspiration from the seminal paper by Boldi and Vigna (BV) on WebGraph compression. 
 
-### From CUI Interface
+BV incorporates three main ideas,
++ Locality
++ Similarity
++ Gap encoding
+
+BLC expands on this by incorporating another idea namely, 
++ Reciprocity
+
+#### Usage:
+
+#### From CUI Interface
 
     $ make
     $ bin/compress ../data/graph/graph_file.txt ../data/compressed/compressed_graph_file.dat
     $ bin/develop ../data/compressed/compressed_graph_file.dat ../data/graph/original_graph.txt
 
-A sample execution will be 
+Sample execution,
+
 ```
 make
 bin/compress ../data/graph/Slashdot0902.txt ../data/compressed/output.dat
 bin/develop ../data/compressed/output.dat ../data/graph/original_graph.txt
-
 ```
+
 * Execute `make` to build programs.
 * Execute `bin/compress` to compress a graph.
 * Execute `bin/develop` to develop a compressed graph.
 
-### From Your Program
+#### From Your Program
 
     BacklinksCompression bl;
     std::vector<std::pair<int, int> > edge_list;
@@ -51,7 +62,7 @@ The followings are the results for real graphs in [Stanford Large Network Datase
     Bits/edge  : 13.59
     Elapsed time to compress: 122.133s
     
-Note:
+#### Note:
 Actual compression time will vary depending on system capabilities. The code might crash incase of insufficient ram.
 
 #### References
