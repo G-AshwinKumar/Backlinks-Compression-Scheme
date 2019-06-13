@@ -1,6 +1,8 @@
 # Slashburn
 
-Python implementation of [SlashBurn][2]
+Slashburn tried to exploit the hubs and the neighbors (‘spokes’) of the hubs to define an alternative community different from the traditional community. It is based on the observation that real world graphs are easily disconnected by hubs, or high degree nodes: removing hubs from a graph creates many small disconnected components, and the remaining giant connected component is substantially smaller than the original graph. The method aims to order these hubs and spokes to get such a compact representation of the adjacency matrix, which in turn leads to good compression. 
+
+In its essence Slashburn is a reodering algorithm following which running standard compression algorithms such as gzip, bz2 and 7z yield better compression.
 
 ---
 
@@ -9,13 +11,13 @@ Python implementation of [SlashBurn][2]
 * `scipy`
 * `numpy`
 * `pandas`
-* few other modules look at .py files
-
+* `os`
+* `pickle`
 ---
 
 ### Usage
 
-Assume graph is store in some txt file named `Slashdot0811.txt` with row-first order (**must** be):
+Assume graph is stored in some txt file with row-first order (**must** be):
 ```
 0,1
 1,0
@@ -25,17 +27,19 @@ Assume graph is store in some txt file named `Slashdot0811.txt` with row-first o
 ...
 ```
 (Example data can be found in `data/compressed/Slashdot0811.txt`.)
-You can run the slashbunr algorithm using 
+
+You can run the slashburn algorithm using,
+
 ```python
 import numpy as np
 from ppr import PPRBear as Bear
 bear = Bear()
 bear.preprocess('data/small.csv')
 ```
-Sample execution is in ash.py file. Take a look at that file for deailed usage explanation.
+
++ Then use any standard compression engine such as [7zip](https://www.7-zip.org/) to compress the reordered schema.
++ Sample execution for the slashburn algorithm is in ash.py file. Take a look at that file for deailed usage explanation.
 
 ---
-
-[1]: http://dl.acm.org/citation.cfm?id=2723716
-[2]: http://ieeexplore.ieee.org/abstract/document/6807798/
-[3]: https://datalab.snu.ac.kr/bear/
+### References:
++ Yongsub Lim, U. Kang, and C. Faloutsos. SlashBurn: Graph Compression and Mining beyond Caveman Communities. Knowledge and Data Engineering, IEEE Transactions on, 26(12):3077–3089, Dec 2014.
