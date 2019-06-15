@@ -13,7 +13,7 @@ BLC expands on this by incorporating another idea namely,
 
 #### Usage:
 
-Assume graph is stored in some txt file with row-first order (**must** be), and tab seperated :
+Assume graph is stored in some txt file with row-first order (**must** be), and tab separated :
 
 ```
 0   1
@@ -58,8 +58,8 @@ bin/develop ../data/compressed/output.dat ../data/graph/original_graph.txt
 
 #### Performance
 
-Backlinks compression scheme has two steps: ordering vertexes and encoding the graph.
-This implementation uses BFS ordering for ordering vertexes and δ-code as the integer encoding scheme in encoding the graph.
+Backlinks compression scheme has two steps: ordering vertices and encoding the graph.
+This implementation uses BFS ordering for ordering vertices and δ-code as the integer encoding scheme in encoding the graph.
 
 The followings are the results for real graphs in [Stanford Large Network Dataset Collection](http://snap.stanford.edu/data/).
 
@@ -80,10 +80,6 @@ Actual compression time will vary depending on system capabilities. The code mig
 
 #### References
 
-* Flavio Chierichetti, Ravi Kumar, Silvio Lattanzi, Michael
-Mitzenmacher, Alessandro Panconesi, and Prabhakar Raghavan. On
-compressing social networks. KDD'09.
+* Flavio Chierichetti, Ravi Kumar, Silvio Lattanzi, Michael Mitzenmacher,Alessandro Panconesi, and Prabhakar Raghavan. On Compressing Social Networks. In Proceedings of the 15th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, KDD ’09, pages 219–228, New York, NY, USA, 2009. ACM.
 
-* Paolo Boldi, Marco Rosa, Massimo Santini, and Sebastiano Vigna.
-Layered label propagation: a multiresolution coordinate-free ordering
-for compressing social networks. WWW'11.
+* P. Boldi and S. Vigna. The Webgraph Framework I: Compression Techniques. In Proceedings of the 13th International Conference on World Wide Web, WWW ’04, pages 595–602, New York, NY, USA, 2004. ACM.
