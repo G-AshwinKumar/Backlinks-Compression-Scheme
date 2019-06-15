@@ -3,9 +3,9 @@
 A social network is a network of individuals (such as friends, acquaintances, and coworkers) connected by interpersonal relationships. The number of active users in social media networks is in an exponential rise, creating the need for complex mechanisms to analyze and understand user behavior. One important tool to aid this being the ability to compress these social media networks into graphs that can fit in main memory. This project aims to provide implementations for the state of the art social network compression algorithms (i.e graph compression) based on current research.
 
 There are working implementations based on three methods,
-1. Backlinks compression scheme (C++)
-2. Slashburn technique (Python)
-3. Abstract Binary Tree compression (C++)
+1. Backlinks compression scheme (C++,[1])
+2. Slashburn technique (Python,[2])
+3. Abstract Binary Tree compression (C++,[3])
 
 #### Datasets:
 
