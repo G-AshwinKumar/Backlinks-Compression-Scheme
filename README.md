@@ -4,7 +4,7 @@ A social network is a network of individuals (such as friends, acquaintances, an
 
 There are working implementations based on three methods,
 1. Backlinks compression scheme (C++)
-2. Slashburn techqnique (Python)
+2. Slashburn technique (Python)
 3. Abstract Binary Tree compression (C++)
 
 #### Datasets:
