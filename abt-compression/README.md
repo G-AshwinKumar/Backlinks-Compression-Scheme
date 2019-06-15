@@ -5,7 +5,7 @@ Abstract Binary Trees Compression is a graph compression scheme for real-world g
 
 #### Usage:
 
-Assume graph is stored in some txt file with row-first order (**must** be), and tab seperated :
+Assume graph is stored in some txt file with row-first order (**must** be), and tab separated :
 
 ```
 0   1
