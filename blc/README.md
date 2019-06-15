@@ -1,7 +1,7 @@
 Backlinks compression
 ========================
 
-Backlinks compression is a graph compression scheme for real-world graphs. Backlinks compression (BLC) draws inspiration from the seminal paper by Boldi and Vigna (BV) on WebGraph compression. 
+Backlinks compression[1] is a graph compression scheme for real-world graphs. Backlinks compression (BLC) draws inspiration from the seminal paper by Boldi and Vigna (BV) on WebGraph compression[2]. 
 
 BV incorporates three main ideas,
 + Locality
