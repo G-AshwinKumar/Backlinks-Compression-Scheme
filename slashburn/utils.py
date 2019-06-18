@@ -320,7 +320,7 @@ def slashburn(A, k=None, greedy=True):
         (perm, wing): Permutation of node indicies and size of wing (int).
     """
     print("Slashburn in progress")
-    start = time.time()
+
     n, _ = A.shape
     if k is None:
         k = max(1, int(0.001 * n))
@@ -390,9 +390,10 @@ def slashburn(A, k=None, greedy=True):
     perm = [0 for _ in range(n)]
     for i in range(n):
         perm[tops[i]] = i
-    bf = bz2.BZ2File("/data/compressed/slashburn.bin", "ab")  # binary file
-    pickle.dump(perm, bf, 2)
-    bf.close()
-    end = time.time()
-    print("Slashburn Reordering time: "+str(end - start)+"s")
+    tf = open("data/compressed/tvshow_edges.csv",
+              "w")  # ASCII file
+    for i in perm:
+        tf.write(str(i) + " ")
+    tf.close()
+
     return perm, iteration * k
