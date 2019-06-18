@@ -28,10 +28,10 @@ int main(int argc, char **argv)
   BitString result;
   auto start = std::chrono::high_resolution_clock::now();
   bl.Compress(edges, &result);
-  auto finish = std::chrono::high_resolution_clock::now();
-  std::chrono::duration<double> elapsed = finish - start;
   cout << "Bit length : " << result.get_length() << endl;
   cout << "Bits/edge  : " << ((double)result.get_length() / edges.size()) << endl;
+  auto finish = std::chrono::high_resolution_clock::now();
+  std::chrono::duration<double> elapsed = finish - start;
   cout << "Elapsed time to compress: " << elapsed.count() << " s\n";
 
   if (!result.Output(argv[2]))
