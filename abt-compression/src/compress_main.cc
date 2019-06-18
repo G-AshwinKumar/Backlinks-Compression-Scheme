@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 {
   if (argc != 3)
   {
-    cerr << "usage: compress GRAPH OUTPUT" << endl;
+    cerr << "Incorrect number of arguments check usage for info" << endl;
     exit(EXIT_FAILURE);
   }
 
@@ -25,29 +25,21 @@ int main(int argc, char **argv)
   cout << "Edges      : " << edges.size() << endl;
 
   AbtCompression bl;
-  BitString result;
+  string result = argv[2];
   auto start = std::chrono::high_resolution_clock::now();
-  /* for (const auto &p : edges)
-  {
-    std::cout << p.first << ", " << p.second << std::endl;
-    // or std::cout << std::get<0>(p) << ", " << std::get<1>(p) << std::endl;
-  } */
-  bl.Compress(edges, &result);
+  bl.Compress(edges, result);
+  streampos begin, end;
+  ifstream myfile(result.c_str(), ios::binary);
+  begin = myfile.tellg();
+  myfile.seekg(0, ios::end);
+  end = myfile.tellg();
+  myfile.close();
+  long size = (end - begin) * 8;
+  cout << "Bit length : " << size << endl;
+  cout << "Bits/edge  : " << ((double)size / edges.size()) << endl;
   auto finish = std::chrono::high_resolution_clock::now();
   std::chrono::duration<double> elapsed = finish - start;
-  //std::ifstream in_file("opt11.txt", std::ios::binary | std::ios::ate);
-  //int file_size = in_file.tellg();
-  //file_size*=8;
-  //cout << "Bit length : " << file_size << endl;
-  //cout << "Bits/edge  : " << ((double)file_size / edges.size()) << endl;
-  //cout << "Elapsed time to compress: " << elapsed.count() << " s\n";
-
-  if (!result.Output(argv[2]))
-  {
-    cerr << "error: Output failed" << endl;
-    exit(EXIT_FAILURE);
-  }
-  exit(EXIT_SUCCESS);
+  cout << "Elapsed time to compress: " << elapsed.count() << " s\n";
 }
 
 bool Input(const char *filename, vector<pair<int, int>> *edges)

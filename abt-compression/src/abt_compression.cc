@@ -239,10 +239,8 @@ inline int sibling(int index)
     return index - 1;
   }
 }
-void AbtCompression ::Compress(std::vector<std::pair<int, int>> edges, BitString *result)
+void AbtCompression ::Compress(std::vector<std::pair<int, int>> edges, string result)
 {
-  time_t start, end;
-  time(&start);
   int current_index, start_index, n, height;
   bool dcn_reached;
 
@@ -285,28 +283,19 @@ void AbtCompression ::Compress(std::vector<std::pair<int, int>> edges, BitString
         }
       }
     }
-    ofstream outf("opt11.txt", std::ios_base::app);
+    ofstream outf(result.c_str(), std::ios_base::app);
     std::string str;
-    std::ofstream f("opt12.txt", std::ios_base::app);
     for (int k = 0; k < n; k++)
     {
-
       if (temp_array[k] != -1)
       {
-        f << temp_array[k];
         str.push_back('0' + temp_array[k]);
       }
     }
     bitChar bchar;
     bchar.setBITS(str);
     bchar.insertBits(outf);
-    f << "\n";
-    f.close();
   }
-
-  time(&end);
-  double dif = difftime(end, start);
-  printf("Elasped time to compress is %.2lf seconds.", dif);
 }
 
 void AbtCompression ::Develop(const BitString &code, std::vector<std::pair<int, int>> *edges)

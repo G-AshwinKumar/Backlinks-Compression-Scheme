@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <vector>
 #include <cstdio>
+#include <string>
 
 const int kWINDOW_WIDTH = 10;
 enum Ordering
@@ -53,7 +54,7 @@ public:
   void TransformToEdge(const std::vector<std::vector<int>> &adj,
                        std::vector<std::pair<int, int>> *edges);
   void Compress(std::vector<std::pair<int, int>> edges,
-                BitString *result);
+                std::string result);
   void Develop(const BitString &code,
                std::vector<std::pair<int, int>> *edges);
 
