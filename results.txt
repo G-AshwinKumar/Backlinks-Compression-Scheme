@@ -1,0 +1,330 @@
+blc:
+
+1.soc-LiveJournal.txt
+Edges      : 68993773
+Bit length : 937623773
+Bits/edge  : 13.59
+Elapsed time to compress: 118.611 s
+
+2.Slashdot0811.txt
+Edges      : 905468
+Bit length : 8550520
+Bits/edge  : 9.44321
+Elapsed time to compress: 2.08941 s
+
+3.Slashdot0902
+Edges      : 948464
+Bit length : 9238812
+Bits/edge  : 9.74081
+Elapsed time to compress: 1.2696 s
+
+4.soc-Epinions1
+Edges      : 508837
+Bit length : 7722158
+Bits/edge  : 15.1761
+Elapsed time to compress: 0.902585 s
+
+5.Wiki-Vote
+Edges      : 103689
+Bit length : 1133098
+Bits/edge  : 10.9279
+Elapsed time to compress: 0.142618 s
+
+6.gplus_combined
+
+7.twitter_combined
+Edges      : 2420766
+Bit length : 19731163
+Bits/edge  : 8.15079
+Elapsed time to compress: 120.293 s
+
+9.facebook_combined
+Edges      : 88234
+Bit length : 774610
+Bits/edge  : 8.77904
+Elapsed time to compress: 0.0977396 s
+
+10.web-Stanford
+Edges      : 2312497
+Bit length : 37298705
+Bits/edge  : 16.1292
+Elapsed time to compress: 3.68315 s
+
+artist_edges
+Edges      : 819306
+Bit length : 12235759
+Bits/edge  : 14.9343
+Elapsed time to compress: 2.47338 s
+
+athletes_edges
+Edges      : 86858
+Bit length : 1478639
+Bits/edge  : 17.0236
+Elapsed time to compress: 0.268281 s
+
+company_edges
+Edges      : 52310
+Bit length : 1048006
+Bits/edge  : 20.0345
+Elapsed time to compress: 0.110704 s
+
+government_edges
+Edges      : 89455
+Bit length : 1093302
+Bits/edge  : 12.2218
+Elapsed time to compress: 0.135637 s
+
+HR_edges
+Edges      : 498202
+Bit length : 9202950
+Bits/edge  : 18.4723
+Elapsed time to compress: 0.932503 s
+
+HU_edges
+Edges      : 222887
+Bit length : 5064539
+Bits/edge  : 22.7225
+Elapsed time to compress: 0.484441 s
+
+new_sites_edges
+Edges      : 206259
+Bit length : 3563018
+Bits/edge  : 17.2745
+Elapsed time to compress: 0.380981 s
+
+politician_edges
+Edges      : 41729
+Bit length : 549155
+Bits/edge  : 13.16
+Elapsed time to compress: 0.0708087 s
+
+public_figure_edges
+Edges      : 67114
+Bit length : 1102244
+Bits/edge  : 16.4235
+Elapsed time to compress: 0.123654 s
+
+RO_edges
+Edges      : 125826
+Bit length : 3236862
+Bits/edge  : 25.7249
+Elapsed time to compress: 0.301193 s
+
+tvshow_edges
+Edges      : 17262
+Bit length : 255434
+Bits/edge  : 14.7975
+Elapsed time to compress: 0.0339282 s
+
+abt:
+
+2.Slashdot0811.txt
+Edges      : 905468
+Bit length : 17407512
+Bits/edge  : 19.2249
+Elapsed time to compress: 307.294 s
+
+3.Slashdot0902.txt
+Edges      : 948464
+Bit length : 18187784
+Bits/edge  : 19.176
+Elapsed time to compress: 340.39 s
+
+4.soc-Epinions1.txt
+Bit length : 8863336
+Bits/edge  : 17.4188
+Elapsed time to compress: 299.435 s
+
+5.Wiki-Vote.txt
+Edges      : 103689
+Bit length : 1339616
+Bits/edge  : 12.9196
+Elapsed time to compress: 15.4369 s
+
+9.facebook_combined.txt
+Edges      : 88234
+Bit length : 694736
+Bits/edge  : 7.87379
+Elapsed time to compress: 9.74913 s
+
+artist_edges.csv
+Edges      : 819306
+Bit length : 16352072
+Bits/edge  : 19.9584
+Elapsed time to compress: 121.813 s
+
+athletes_edges.csv
+Edges      : 86858
+Bit length : 1761176
+Bits/edge  : 20.2765
+Elapsed time to compress: 29.0616 s
+
+company_edges.csv
+Edges      : 52310
+Bit length : 1161232
+Bits/edge  : 22.199
+Elapsed time to compress: 27.622 s
+
+government_edges.csv
+Edges      : 89455
+Bit length : 1406848
+Bits/edge  : 15.7269
+Elapsed time to compress: 15.312 s
+
+HR_edges.csv
+Edges      : 498202
+Bit length : 11782368
+Bits/edge  : 23.6498
+Elapsed time to compress: 131.884 s
+
+HU_edges.csv
+Edges      : 222887
+Bit length : 5812608
+Bits/edge  : 26.0787
+Elapsed time to compress: 110.017 s
+
+new_sites_edges.csv
+Edges      : 206259
+Bit length : 4422312
+Bits/edge  : 21.4406
+Elapsed time to compress: 61.2152 s
+
+politician_edges.csv
+Edges      : 41729
+Bit length : 716592
+Bits/edge  : 17.1725
+Elapsed time to compress: 12.1133 s
+
+public_figure_edges.csv
+Edges      : 67114
+Bit length : 1296440
+Bits/edge  : 19.317
+Elapsed time to compress: 22.961 s
+
+RO_edges.csv
+Edges      : 125826
+Bit length : 3465600
+Bits/edge  : 27.5428
+Elapsed time to compress: 90.2037 s
+
+tvshow_edges.csv
+Edges      : 17262
+Bit length : 306744
+Bits/edge  : 17.7699
+Elapsed time to compress: 7.46089 s
+
+slashburn
+running time is measured for one iteration of PageRank on Hadoop.
+
+
+2.Slashdot0811.txt
+Edges: 905467
+Slashburn Reordering time: 386.359s
+Bit length:3624400
+Bits/Edge: 4.002796347078358
+
+Graph: 3.Slashdot0902.txt
+Edges: 948463
+Slashburn in progress
+Slashburn Reordering time: 65.88290643692017s
+Slashburn Reordering time: 412.79824924468994s
+Bit length:3855184
+Bits/Edge: 4.064664620549246
+
+Graph: 4.soc-Epinions1.txt
+Edges: 508836
+Slashburn in progress
+Slashburn Reordering time: 129.6941499710083s
+Bit length:3553312
+Bits/Edge: 6.98321659631001
+
+Graph: 5.Wiki-Vote.txt
+Edges: 103688
+Slashburn in progress
+Slashburn Reordering time: 2.0906667709350586s
+Bit length:275720
+Bits/Edge: 2.6591312398734663
+
+Graph: 9.facebook_combined.txt
+Edges: 88233
+Slashburn in progress
+Slashburn Reordering time: 0.44207143783569336s
+Bit length:152680
+Bits/Edge: 1.7304183242097628
+
+Graph: artist_edges.csv
+Edges: 819305
+Slashburn in progress
+Slashburn Reordering time: 50.80761957168579s
+Bit length:2335840
+Bits/Edge: 2.8510017636899567
+
+Graph: athletes_edges.csv
+Edges: 86857
+Slashburn in progress
+Slashburn Reordering time: 1.5111546516418457s
+Bit length:576688
+Bits/Edge: 6.639510920248224
+
+Graph: company_edges.csv
+Edges: 52309
+Slashburn in progress
+Slashburn Reordering time: 0.814910888671875s
+Bit length:588544
+Bits/Edge: 11.25129518820853
+
+Graph: government_edges.csv
+Edges: 89454
+Slashburn in progress
+Slashburn Reordering time: 1.1584851741790771s
+Bit length:273400
+Bits/Edge: 3.056319449102332
+
+Graph: HR_edges.csv
+Edges: 498201
+Slashburn in progress
+Slashburn Reordering time: 17.428694486618042s
+Bit length:2530624
+Bits/Edge: 5.079524127811867
+
+Graph: HU_edges.csv
+Edges: 222886
+Slashburn in progress
+Slashburn Reordering time: 5.093191385269165s
+Bit length:2192944
+Bits/Edge: 9.838859327189684
+
+Graph: new_sites_edges.csv
+Edges: 206258
+Slashburn in progress
+Slashburn Reordering time: 4.881471872329712s
+Bit length:1251136
+Bits/Edge: 6.065878656827857
+
+Graph: politician_edges.csv
+Edges: 41728
+Slashburn in progress
+Slashburn Reordering time: 0.44344305992126465s
+Bit length:227440
+Bits/Edge: 5.450536809815951
+
+Graph: public_figure_edges.csv
+Edges: 67113
+Slashburn in progress
+Slashburn Reordering time: 0.9148116111755371s
+Bit length:466240
+Bits/Edge: 6.9470892375545725
+
+Graph: RO_edges.csv
+Edges: 125825
+Slashburn in progress
+Slashburn Reordering time: 2.284942865371704s
+Bit length:1916224
+Bits/Edge: 15.229278760182794
+
+Graph: tvshow_edges.csv
+Edges: 17261
+Slashburn in progress
+Slashburn Reordering time: 0.1917431354522705s
+Bit length:146800
+Bits/Edge: 8.504721626788715
